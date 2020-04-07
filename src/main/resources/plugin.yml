@@ -1,0 +1,10 @@
+name: ZerioBasic
+version: ${project.version}
+main: me.ignjax.zeriobasic.ZerioBasic
+author: ignJax
+
+commands:
+  discord:
+    description: Join our discord!
+  forums:
+    description: Check out our forums!

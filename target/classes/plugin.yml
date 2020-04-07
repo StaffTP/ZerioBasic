@@ -1,0 +1,10 @@
+name: ZerioBasic
+version: 1.0-SNAPSHOT
+main: me.ignjax.zeriobasic.ZerioBasic
+author: ignJax
+
+commands:
+  discord:
+    description: Join our discord!
+  forums:
+    description: Check out our forums!
