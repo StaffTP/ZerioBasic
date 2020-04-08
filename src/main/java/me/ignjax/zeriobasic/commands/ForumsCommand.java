@@ -1,6 +1,6 @@
 package me.ignjax.zeriobasic.commands;
 
-import org.bukkit.ChatColor;
+import me.ignjax.zeriobasic.util.ChatUtil;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -13,14 +13,10 @@ import org.bukkit.command.CommandSender;
  */
 public class ForumsCommand implements CommandExecutor {
 
-    public static String chat(String s) {
-        return ChatColor.translateAlternateColorCodes('&', s);
-    }
-
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (cmd.getName().equalsIgnoreCase("forums")) {
-            sender.sendMessage(this.chat("&7You can check out our forums at &9forums.zeriopvp.com"));
+            sender.sendMessage(ChatUtil.Chat("&7You can check out our forums at &9forums.zeriopvp.com"));
         }
         return true;
     }

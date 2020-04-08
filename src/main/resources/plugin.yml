@@ -1,9 +1,11 @@
 name: ZerioBasic
 version: ${project.version}
 main: me.ignjax.zeriobasic.ZerioBasic
-author: ignJax
+authors: [ignJax, StaffTP]
 
 commands:
+  ping:
+    description: Check your ping!
   discord:
     description: Join our discord!
   forums:

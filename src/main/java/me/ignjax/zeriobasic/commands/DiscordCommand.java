@@ -1,5 +1,6 @@
 package me.ignjax.zeriobasic.commands;
 
+import me.ignjax.zeriobasic.util.ChatUtil;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -13,12 +14,11 @@ import org.bukkit.command.CommandSender;
  */
 public class DiscordCommand implements CommandExecutor {
 
-    public static String chat(String s) { return ChatColor.translateAlternateColorCodes('&', s); }
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if(cmd.getName().equalsIgnoreCase("discord")) {
-            sender.sendMessage(this.chat("&7You can join our discord at &9discord.zeriopvp.com"));
+            sender.sendMessage(ChatUtil.Chat("&7You can join our discord at &9discord.zeriopvp.com"));
         }
         return true;
     }
